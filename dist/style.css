@@ -677,6 +677,7 @@ li a span {
 	-webkit-align-items: center;
 	align-items: center;
 	gap: 3rem;
+	margin-bottom: 30rem;
 }
 
 #skills .swiper-button-next,
@@ -957,6 +958,7 @@ li a span {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	margin-bottom: 30rem;
 }
 
 .cv-download:hover {
