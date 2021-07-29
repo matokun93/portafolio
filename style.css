@@ -388,7 +388,7 @@ li a span {
 		justify-content: center;
 		width: 100vw;
 		flex-basis: 100%;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.scroll {
@@ -405,7 +405,7 @@ li a span {
 	}
 
 	.home-content h1 {
-		font-size: 5rem;
+		font-size: 3.5rem;
 		line-height: 97%;
 		width: 100%;
 		text-align: center;
@@ -497,7 +497,7 @@ li a span {
 }
 
 .image-1 {
-	background-image: url('/dist/static/todolist-cover.png');
+	background-image: url('/dist/todolist-cover.png');
 }
 
 .image-2 {
