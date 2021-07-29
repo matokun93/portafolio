@@ -501,28 +501,28 @@ li a span {
 }
 
 .image-2 {
-	background-image: url('/dist/static/adv-cover.png');
+	background-image: url('/static/adv-cover.png');
 }
 
 .image-3 {
-	background-image: url('/dist/static/3d-card-cover.png');
+	background-image: url('/static/3d-card-cover.png');
 }
 
 .image-4 {
-	background-image: url('/dist/static/glass-cover.png');
+	background-image: url('/static/glass-cover.png');
 }
 
 .image-5 {
-	background-image: url('/dist/static/threejs-cover.png');
+	background-image: url('/static/threejs-cover.png');
 }
 
 .image-6 {
-	background-image: url('/dist/static/blender-cover.png');
+	background-image: url('/static/blender-cover.png');
 	background-position: center;
 }
 
 .image-7 {
-	background-image: url('/dist/static/portfolio-cover.png');
+	background-image: url('/static/portfolio-cover.png');
 }
 
 .slider-glass {
@@ -738,68 +738,68 @@ li a span {
 }
 
 .logo1 {
-	background-image: url('/dist/static/css.png');
+	background-image: url('/static/css.png');
 }
 
 .logo2 {
-	background-image: url('/dist/static/HTML5_Badge_512.png');
+	background-image: url('/static/HTML5_Badge_512.png');
 }
 
 .logo3 {
-	background-image: url('/dist/static/javascript.png');
+	background-image: url('/static/javascript.png');
 }
 
 .logo4 {
-	background-image: url('/dist/static/reract.png');
+	background-image: url('/static/reract.png');
 }
 
 .logo5 {
-	background-image: url('/dist/static/nodejs.png');
+	background-image: url('/static/nodejs.png');
 }
 
 .logo6 {
-	background-image: url('/dist/static/sql2.png');
+	background-image: url('/static/sql2.png');
 }
 
 .logo7 {
-	background-image: url('/dist/static/git.png');
+	background-image: url('/static/git.png');
 	width: 5.5rem;
 }
 
 .logo8 {
-	background-image: url('/dist/static/xd.png');
+	background-image: url('/static/xd.png');
 }
 
 .logo9 {
-	background-image: url('/dist/static/blender.png');
+	background-image: url('/static/blender.png');
 }
 
 .logo10 {
-	background-image: url('/dist/static/zbrush.png');
+	background-image: url('/static/zbrush.png');
 }
 
 .logo11 {
-	background-image: url('/dist/static/creativity.png');
+	background-image: url('/static/creativity.png');
 }
 
 .logo12 {
-	background-image: url('/dist/static/learn.png');
+	background-image: url('/static/learn.png');
 }
 
 .logo13 {
-	background-image: url('/dist/static/vision.png');
+	background-image: url('/static/vision.png');
 }
 
 .logo14 {
-	background-image: url('/dist/static/adapt2.png');
+	background-image: url('/static/adapt2.png');
 }
 
 .logo15 {
-	background-image: url('/dist/static/flag2.png');
+	background-image: url('/static/flag2.png');
 }
 
 .logo16 {
-	background-image: url('/dist/static/innovate.png');
+	background-image: url('/static/innovate.png');
 }
 
 @media (max-width: 1100px) {
