@@ -497,7 +497,7 @@ li a span {
 }
 
 .image-1 {
-	background-image: url('/dist/todolist-cover.png');
+	background-image: url('/todolist-cover.png');
 }
 
 .image-2 {
@@ -635,7 +635,7 @@ li a span {
 
 #skills {
 	padding: 5rem 5vw;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -881,7 +881,7 @@ li a span {
 /* About */
 
 #about {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1003,12 +1003,12 @@ li a span {
 /* Contact */
 
 #contact {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
-	padding: 0 5rem;
+	/* padding: 0 5rem; */
 	display: flex;
 	justify-content: center;
-	padding-top: 25vh;
+	padding: 25vh 5vw;
 }
 
 #contact .left-section {
