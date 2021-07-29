@@ -1232,3 +1232,7 @@ textarea {
 		font-size: 3rem;
 	}
 }
+
+.spacer {
+	height: 10vh;
+}

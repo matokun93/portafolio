@@ -50,7 +50,6 @@
                     </div>
                     <div class="home-left-section">
                         <h1>MATIAS <br> CASTRO</h1>
-                        <img src="./static/threejs-cover.png" alt="">
                     </div>
                     <div class="home-right-section">
                     <p>Ingeniero Civil en Informática</p>                                                         
@@ -420,12 +419,8 @@
                     </div>
                 </div>
                 <a class="cv-download" href="./static/matiascv.pdf" download>Descargar CV <i class="fas fa-download"></i></a>
-
-                
             </section>
-            <br>
-            <br>
-    
+            <div class="spacer"></div>
             <!-- Contact -->
             <section class="section" id="contact">
                 <div class="left-section">
@@ -491,95 +486,81 @@
             
             // portfolio swiper
             var swiper = new Swiper('#portfolio .swiper-container', {
-                effect: 'coverflow',
+                // effect: 'coverflow',
                 grabCursor: true,
                 centeredSlides: true,
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 0,
-                    depth: 200,
-                    modifier: 1,
-                    slideShadows: true,
-                },        
+                // coverflowEffect: {
+                //     rotate: 20,
+                //     stretch: 0,
+                //     depth: 200,
+                //     modifier: 1,
+                //     slideShadows: true,
+                // },        
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
             },
-                breakpoints: {
-            // when window width is >= 320px
-            320: {
-            slidesPerView: 1,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            404: {
-            slidesPerView: 1.14,
-            spaceBetween: 5
-            },
-            // when window width is >= 480px
-            456: {
-            slidesPerView: 1.28,
-            spaceBetween: 15
-            },
-            // when window width is >= 320px
-            573: {
-            slidesPerView: 1.42,
-            spaceBetween: 5
-            },
-            625: {
-            slidesPerView: 1.56,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            742: {
-            slidesPerView: 1.7,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            794: {
-            slidesPerView: 1.84,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            911: {
-            slidesPerView: 1.98,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            963: {
-            slidesPerView: 2.12,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            1080: {
-            slidesPerView: 2.26,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            1132: {
-            slidesPerView: 2.4,
-            spaceBetween: 5
-            },
-            // when window width is >= 320px
-            1249: {
-            slidesPerView: 2.54,
-            spaceBetween: 5
-            },
-            // when window width is >= 480px
-            1301: {
-            slidesPerView: 2.68,
-            spaceBetween: 15
-            },
-            // when window width is >= 320px
-            1418: {
-            slidesPerView: 2.82,
-            spaceBetween: 5
-            },
-            // when window width is >= 640px
-            1470: {
-            slidesPerView: 3,
-            spaceBetween: 10
-            }},
+            //     breakpoints: {
+            // 320: {
+            // slidesPerView: 1,
+            // spaceBetween: 5
+            // },
+            // 404: {
+            // slidesPerView: 1.14,
+            // spaceBetween: 5
+            // },
+            // 456: {
+            // slidesPerView: 1.28,
+            // spaceBetween: 15
+            // },
+            // 573: {
+            // slidesPerView: 1.42,
+            // spaceBetween: 5
+            // },
+            // 625: {
+            // slidesPerView: 1.56,
+            // spaceBetween: 5
+            // },
+            // 742: {
+            // slidesPerView: 1.7,
+            // spaceBetween: 5
+            // },
+            // 794: {
+            // slidesPerView: 1.84,
+            // spaceBetween: 5
+            // },
+            // 911: {
+            // slidesPerView: 1.98,
+            // spaceBetween: 5
+            // },
+            // 963: {
+            // slidesPerView: 2.12,
+            // spaceBetween: 5
+            // },
+            // 1080: {
+            // slidesPerView: 2.26,
+            // spaceBetween: 5
+            // },
+            // 1132: {
+            // slidesPerView: 2.4,
+            // spaceBetween: 5
+            // },
+            // 1249: {
+            // slidesPerView: 2.54,
+            // spaceBetween: 5
+            // },
+            // 1301: {
+            // slidesPerView: 2.68,
+            // spaceBetween: 15
+            // },
+            // 1418: {
+            // slidesPerView: 2.82,
+            // spaceBetween: 5
+            // },
+            // 1470: {
+            // slidesPerView: 3,
+            // spaceBetween: 10
+            // }},
             });
             
             // skills swiper
