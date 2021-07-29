@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Matías Castro</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/38b88d98e7.js" crossorigin="anonymous"></script>
+        
+        <!--swiper-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	</head>
+	<body>
+
+        <canvas class="webgl"></canvas>
+
+        <header>
+            <nav class="navbar">
+                <div class="brand-title">
+                    <a href="#home">Mato_Kun</a>
+                </div>
+                <a class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+               
+                <div class="navbar-links">
+                    <ul>
+                        <li class="home"><a href="#home"><i class="fas fa-home"></i></a></li>
+                        <li class="portfolio"><a href="#portfolio">Trabajos</a></li>                   
+                        <li class="skills"><a href="#skills">Habilidades</a></li>
+                        <li class="about"><a href="#about">Sobre mí</a></li>
+                        <li class="contact"><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="container">
+            <!-- Home -->
+            <section class="section" id="home">
+                <div class="home-content">
+                    <div class="home-icons">
+                        <a href="https://www.linkedin.com/in/mato-castro/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/matokun95?tab=repositories" target="blank"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#portfolio"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                    <div class="home-left-section">
+                        <h1>MATIAS <br> CASTRO</h1>
+                    </div>
+                    <div class="home-right-section">
+                    <p>Ingeniero Civil en Informática</p>                                                         
+                    </div>
+                </div>            
+                <div class="scroll-container">
+                    <a href="#portfolio">
+                        <svg class="scroll" width="40" height="77" viewBox="0 0 40 77">
+                            <g id="scroll" transform="translate(-253 -787)">
+                                    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff" stroke-width="4">
+                                        <rect width="40" height="77" rx="20" stroke="none"/>
+                                        <rect x="2" y="2" width="36" height="73" rx="18" fill="none"/>
+                                    </g>
+                                <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#fff"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>                 
+    
+            </section>
+    
+            <!-- Portfolio -->
+            <section class="section" id="portfolio">
+                <div class="portfolio-header">
+                    <h1>Trabajos</h1>
+                    <p>Algunos proyectos profesionales y personales</p>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Desarrolle está aplicación web cuando aprendí a usar el framework React. La aplicación permite agregar y quitar tareas de una lista, además de marcarlas como completadas. Se pueden filtrar las tareas mostradas de acuerdo a su estado. Las tareas quedan guardadas en la memoria local, por lo que no se pierden al cerrar el navegador. Además, aproveche de experimentar un poco implementando un Toast (aviso) como componente, para cuando se ingresa una tarea con el texto vacío.
+                                </div>
+                                <div class="slider-image image-1">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        Lista de tareas
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Aplicación web de administración de tareas, desarrollada utilizando React.</p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/todo-list/" target="_blank" class="slider-button">Demo</a>
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Desarrollé el front-end completo de esta aplicación para la empresa Aguas del Valle. La aplicación funciona en plataformas android, iOS y PC; sirve para administrar las operaciones de emergencia que realiza la empresa a través de contratistas. La comunicación con el back-end es a través de una API desarrollada en NodeJS <br> <br> Para más detalles presionar "Demo"
+                                </div>
+                                <div class="slider-image image-2">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        App de gestión
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-angular"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Aplicación multiplataforma para la gestión de operaciones de emergencia, desarrollada con el framework Ionic (Angular).</p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/ADV-gallery/" target="_blank" class="slider-button">Demo</a>                                
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Desarrollé esta página para explorar el uso de efectos 3D en JavaScript, simulando una carta de producto en sitio de ventas.
+                                </div>
+                                <div class="slider-image image-3">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        Carta 3D
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Carta de producto para sitio de ventas, utilizando efecto 3D en JavaScript.</p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/3D-card/" target="_blank" class="slider-button">Demo</a>                                
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Desarrollé esta página para explorar el efecto de glassmorphism que se está utilizando en la actualidad, simulando un dashboard de gestión de proyectos.
+                                </div>
+                                <div class="slider-image image-4">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        Glass dashboard
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Diseño de dashboard usando morfismo de vidrio.</p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/glass-dashboard/" target="_blank" class="slider-button">Demo</a>
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Desarrolle esta página para aprender a utilizar el framework ThreeJs de JavaScript. El framework permite implementar modelos 3D a las aplicaciones; los modelos pueden realizarse a través de código JavaScript, o a través de otro software de modelado 3D como Blender, y luego importarlos, animarlos, agregar párticulas, interactividad, iluminación, etc. <br><br> En este caso, la esfera 3D tiene un mapa normal como textura, además de la iluminacion de colores, y responde ante el movimiento del mouse y scroll.
+                                </div>
+                                <div class="slider-image image-5">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        3D JavaScript
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Prueba del framework ThreeJS de JavaScript. </p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/3D-sphere/" target="_blank" class="slider-button">Demo</a>
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div>                                                                                
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Aproveché mi tiempo libre para aprender a utilizar Blender y otros softwares de diseño y desarrollo 3D, con el fin de potenciar aún más mi creatividad, además de poder utilizar lo que desarrollo en Blender para implementarlo en aplicaciones, como modelos 3D interactivos o estáticos. 
+                                </div>
+                                <div class="slider-image image-6">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        Galería 3D
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>Galería de modelos 3D hechos en Blender </p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a href="https://matokun95.github.io/blender-gallery/" target="_blank" class="slider-button">Demo</a>
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-glass">
+                                <div class="slider-details hidden">
+                                    <a class="toggle-details"><i class="fas fa-times"></i></a>
+                                    Implementé algunas tecnologías interesants que he estado aprendiendo para desarrollar este portafolio; utilicé ThreeJS para agregar las particulas flotantes que interactúan con el movimiento del mouse; utilicé Blender para realizar los modelos 3D que se ven en el fondo; las particulas flotantes y el logo los realicé en Krita, otro software que aprendí a utilizar de la mano de Blender; implementé el carrusel de trabajos y el de habilidades a través del framework SwiperJS de JavaScript; el resto está hecho en html, css y JavaScript puro, agregando algunas animaciones simples.
+                                </div>
+                                <div class="slider-image image-7">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="proyect-name">
+                                        Portafolio
+                                    </div>    
+                                    <div class="proyect-tools">
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="proyect-description">
+                                        <p>El portafolio web que estás viendo en este momento</p>
+                                    </div>
+                                </div>
+                                <div class="slider-buttons">
+                                    <a class="details-button slider-button">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination --> 
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>      
+                </div>
+            </section>
+    
+            <!-- Skills -->
+            <section class="section" id="skills">
+                <h1>Habilidades</h1>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">                    
+                        <div class="swiper-slide">
+                            <div class="slider-title">
+                                Front-end
+                            </div>
+                            <div class="slider-logos">
+                                <div class="logo-container">
+                                    <div class="logo-background">CSS</div>
+                                    <div class="logo1 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Html</div>
+                                    <div class="logo2 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">JavaScript</div>
+                                    <div class="logo3 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">React</div>
+                                    <div class="logo4 logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-title">
+                                Back-end
+                            </div>
+                            <div class="slider-logos">
+                                <div class="logo-container">
+                                    <div class="logo-background">NodeJS</div>                            
+                                    <div class="logo5 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">SQL</div>
+                                    <div class="logo6 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">GIT</div>
+                                    <div class="logo7 logo"></div>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-title">
+                                Design
+                            </div>
+                            <div class="slider-logos">
+                                <div class="logo-container">
+                                    <div class="logo-background">Adobe XD</div>                            
+                                    <div class="logo8 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Blender</div>                            
+                                    <div class="logo9 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Zbrush</div>                            
+                                    <div class="logo10 logo"></div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="swiper-slide general-skills">
+                            <div class="slider-title">
+                                Transversales
+                            </div>
+                            <div class="slider-logos">
+                                <div class="logo-container">
+                                    <div class="logo-background">Inglés <br> avanzado</div>                            
+                                    <div class="logo15 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Creatividad</div>                            
+                                    <div class="logo11 logo"></div>                            
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Rápido <br> aprendizaje</div>                            
+                                    <div class="logo12 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Visión <br> analítica</div>                            
+                                    <div class="logo13 logo"></div>
+                                </div>
+                                <div class="logo-container">
+                                    <div class="logo-background">Adapta- <br> bilidad</div>                            
+                                    <div class="logo14 logo"></div>
+                                </div>   
+                                <div class="logo-container">
+                                    <div class="logo-background">Innovación</div>                            
+                                    <div class="logo16 logo"></div>
+                                </div>                                                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>              
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+    
+            <!-- About -->
+            <section class="section" id="about">
+                <h1 class="title">Sobre mí</h1>
+                <p class="info"> Soy un Ingeniero civil al que le apasionan el desarrollo de software, el aprendizaje continuo, y las buenas prácticas. <br><br> Aprendo muy rápido, me adapto y soy creativo.
+                     Siempre estoy buscando la mejora continua e innovación; soy autodidacta, me gusta explorar y aprender diferentes disciplinas aprovechando mi rápido aprendizaje.
+                      Tengo una buena visión analítica, que utilizo siempre al momento de resolver problemas.<br><br> Al igual que en el ámbito profesional, 
+                      en mi vida personal sigo haciendo uso de las cualidades que mencioné, y es normal para mí explorar y dominar disciplinas que van llamando mi atención, por lo que tengo muchos intereses bastante variados; aquí incluyo algunos de ellos.</p>
+                <div class="about-icons">
+                    <div class="about-icons-container">
+                        <div class="about-icons-background">Fútbol</div>
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="about-icons-container">
+                        <div class="about-icons-background">Arte 3D</div>
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <div class="about-icons-container">
+                        <div class="about-icons-background">Guitarra</div>
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <!-- <div class="about-icons-container">
+                        <div class="icons-background">Desarrollo de Videojuegos</div>
+                        <i class="fab fa-unity"></i>
+                    </div> -->
+                    <div class="about-icons-container">
+                        <div class="about-icons-background">Gym</div>
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="about-icons-container">
+                        <div class="about-icons-background">Cine / <br> Anime</div>
+                        <i class="fas fa-film"></i>
+                    </div>
+                </div>
+                <a class="cv-download" href="/dist/static/matiascv.pdf" download>Descargar CV <i class="fas fa-download"></i></a>
+                
+            </section>
+    
+            <!-- Contact -->
+            <section class="section" id="contact">
+                <div class="left-section">
+                    <h1>Contacto</h1>  
+                    <p class="contact-info-general">Abajo incluyo la información para contactarme, o puedes enviarme un mensaje directamente llenando el formulario</p>              
+                    <div class="contact-info">
+                        <p><i class="fab fa-whatsapp"></i>+56 9 9270 4341</p>
+                        <p><i class="fas fa-envelope"></i>matias.jca95@gmail.com</p>
+                    </div>                
+                    <div class="contact-icons">
+                        <a href="https://www.linkedin.com/in/mato-castro/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/matokun95?tab=repositories" target="blank"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#portfolio"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+                <div class="right-section">                
+                    <form action="https://formsubmit.co/matias.jca95@gmail.com" method="POST">
+                        <div class="name-email">
+                            <div class="text-field">
+                                <label for="">Nombre</label>
+                                <input class="name-input" type="text" name="name" required>                                                                   
+                            </div>                                       
+                            <div class="text-field">
+                                <label for="">Correo</label>
+                                <input class="email-input" type="email" name="email" required>                        
+                            </div>
+                        </div>
+                        <div class="text-field">
+                            <label for="">Asunto</label>
+                            <input class="subject-input" type="text" name="subject" required>                                                                   
+                        </div>
+                        <div class="text-field">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" class="message-input" id="" cols="30" rows="10" required></textarea>
+                        </div>                  
+                        <button class="submit-button" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                   </form>                    
+                </div>            
+            </section>
+        </div>
+
+
+         <!-- CDN Link to Three.js -->
+        <script type="module" src="./index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/CSSRulePlugin.min.js" integrity="sha512-EIzKYNrmzSj8Q5czLrNi/F6bplhopAp2Li9nk/8r7MW+Ov9KPEo0xrjWMYXU8lFYy5dzh/w8Ql5ShZHucrjXdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            
+            //const content = CSSRulePlugin.getRule('.home-content:before')
+
+
+            // autocomplete off
+            var removeReadonly = (e) => {  
+                setTimeout(() => {
+                    e.removeAttribute('readonly')            
+                }, 10);      
+            }
+        
+            var setReadonly = (e) => {
+                // e.setAttribute('readonly','readonly')
+            }
+            
+            // portfolio swiper
+            var swiper = new Swiper('#portfolio .swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },        
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+            },
+                breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            404: {
+            slidesPerView: 1.14,
+            spaceBetween: 5
+            },
+            // when window width is >= 480px
+            456: {
+            slidesPerView: 1.28,
+            spaceBetween: 15
+            },
+            // when window width is >= 320px
+            573: {
+            slidesPerView: 1.42,
+            spaceBetween: 5
+            },
+            625: {
+            slidesPerView: 1.56,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            742: {
+            slidesPerView: 1.7,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            794: {
+            slidesPerView: 1.84,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            911: {
+            slidesPerView: 1.98,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            963: {
+            slidesPerView: 2.12,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            1080: {
+            slidesPerView: 2.26,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            1132: {
+            slidesPerView: 2.4,
+            spaceBetween: 5
+            },
+            // when window width is >= 320px
+            1249: {
+            slidesPerView: 2.54,
+            spaceBetween: 5
+            },
+            // when window width is >= 480px
+            1301: {
+            slidesPerView: 2.68,
+            spaceBetween: 15
+            },
+            // when window width is >= 320px
+            1418: {
+            slidesPerView: 2.82,
+            spaceBetween: 5
+            },
+            // when window width is >= 640px
+            1470: {
+            slidesPerView: 3,
+            spaceBetween: 10
+            }},
+            });
+            
+            // skills swiper
+            var Swiper = new Swiper('#skills .swiper-container', {
+                grabcursos: true,
+                    pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+            }
+            });
+        </script>
+
+        <script>
+            const h1 = document.querySelector('h1')
+            const p = document.querySelector('p')
+            const tl = gsap.timeline()
+
+            //tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
+            tl.to(h1, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '+=.5')
+            tl.to(p, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '-=1')
+
+            // toggle menu
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+            toggleButton.addEventListener('click', () => {
+                navbarLinks.classList.toggle('active')
+            })
+
+            // toggle slider details 
+            const toggleDetailsButton = document.querySelectorAll('.toggle-details')
+            const detailsButtons = document.querySelectorAll('.details-button')
+            const details = document.querySelectorAll('.slider-details')
+            const container = document.querySelector('.container')
+
+            toggleDetailsButton.forEach(button => {
+                button.addEventListener('click', () => {
+                    details.forEach(detail => {
+                        detail.classList.add('hidden')
+                    })
+                })
+            })
+
+            // detailsButtons.forEach(button => {
+            //     button.addEventListener('click', (e) => {
+            //         let son = e.toElement
+            //         let parent = son.parentElement
+            //         let prevSibling = parent.previousElementSibling;
+            //         while(prevSibling.previousElementSibling != null) {
+            //             prevSibling = prevSibling.previousElementSibling;
+            //             prevSibling.classList.remove('hidden')
+            //         }
+            //     })
+            // });
+
+            
+            detailsButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    let son = button
+                    let parent = son.parentElement
+                    let prevSibling = parent.previousElementSibling;
+                    while(prevSibling.previousElementSibling != null) {
+                        prevSibling = prevSibling.previousElementSibling;
+                        prevSibling.classList.remove('hidden')
+                    }
+                })
+            });
+
+            container.addEventListener('click', (e) => {
+            details.forEach(detail => {
+                    detail.classList.add('hidden')
+                })
+            }, true)
+
+        </script>
+	</body>
+</html>
