@@ -419,14 +419,14 @@ li a span {
 /* Portfolio */
 
 #portfolio {
-	padding: 10vh 5vw;
-	min-height: 100vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	gap: 3rem;
-	align-items: center;
-	justify-content: center;
+	padding-top: 10vh;
+}
+
+#portfolio .swiper-container {
+}
+
+#portfolio .swiper-wrapper {
+	padding: 4rem 0;
 }
 
 .portfolio-header {
@@ -478,11 +478,11 @@ li a span {
 	display: none;
 }
 
-#portfolio .swiper-slide {
+/* #portfolio .swiper-slide {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
 .slider-image {
 	height: 40%;
@@ -921,7 +921,6 @@ li a span {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	margin-bottom: 30rem;
 }
 
 .cv-download:hover {
@@ -984,7 +983,7 @@ li a span {
 
 .left-section h1 {
 	font-size: 4rem;
-	flex-basis: 17%;
+	margin-bottom: 1.5rem;
 }
 
 .contact-info-general {
