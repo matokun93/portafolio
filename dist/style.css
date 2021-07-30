@@ -488,19 +488,7 @@ li a span {
 	height: 40%;
 }
 
-.slider-glass {
-	display: flex;
-	flex-direction: column;
-	height: 60vh;
-	border-radius: 10px;
-
-	background: rgba(255, 255, 255, 0.3);
-	box-shadow: 0 8px 32px 0 rgba(17, 66, 99, 0.37);
-	backdrop-filter: blur(6.5px);
-	-webkit-backdrop-filter: blur(6.5px);
-}
-
-.slider-image img {
+k .slider-image img {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px 10px 0 0;
