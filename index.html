@@ -278,7 +278,7 @@
                         </div>
                     </div>
                     <!-- Add Pagination --> 
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination"></div>              
                     <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>      
@@ -493,9 +493,23 @@
             
             // portfolio swiper
             var swiper = new Swiper('#portfolio .swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+            },
+            });
+            
+            // var swiper = new Swiper('#portfolio .swiper-container', {
                 // effect: 'coverflow',
-                grabCursor: true,
-                centeredSlides: true,
+                // grabCursor: true,
+                // centeredSlides: true,
                 // coverflowEffect: {
                 //     rotate: 20,
                 //     stretch: 0,
@@ -503,10 +517,10 @@
                 //     modifier: 1,
                 //     slideShadows: true,
                 // },        
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-            },
+            //     navigation: {
+            //         nextEl: '.swiper-button-next',
+            //         prevEl: '.swiper-button-prev',
+            // },
             //     breakpoints: {
             // 320: {
             // slidesPerView: 1,
@@ -568,7 +582,7 @@
             // slidesPerView: 3,
             // spaceBetween: 10
             // }},
-            });
+            // });
             
             // skills swiper
             var Swiper = new Swiper('#skills .swiper-container', {
