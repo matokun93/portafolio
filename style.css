@@ -5,6 +5,7 @@
 	--clr-primary-light: rgb(38, 108, 155);
 	--clr-accent: rgb(66, 172, 233);
 	--clr-almost-white: rgba(204, 236, 255, 0.993);
+	--clr-portfolio-slide: rgb(67, 128, 168);
 
 	--clr-secondary: #58fcec;
 	--clr-third: #ff7477;
@@ -482,7 +483,8 @@ li a span {
 }
 
 #portfolio .slider-glass {
-	background: var(--clr-primary-light);
+	/* background: var(--clr-primary-light); */
+	background: var(--clr-portfolio-slide);
 	border-radius: 10px;
 }
 
@@ -628,7 +630,7 @@ li a span {
 /* skills */
 
 #skills {
-	padding: 5rem 5vw;
+	padding: 10vh 5vw;
 	min-height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -870,6 +872,11 @@ li a span {
 	.slider-title {
 		font-size: 1.5rem;
 	}
+
+	#skills h1 {
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
 }
 
 /* About */
@@ -880,7 +887,7 @@ li a span {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0 5vw;
+	padding: 10vh 5vw;
 	gap: 2rem;
 	background-size: cover;
 	background-position: center;
