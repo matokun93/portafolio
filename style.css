@@ -421,7 +421,6 @@ li a span {
 
 #portfolio {
 	padding: 12vh 0;
-	border: 2px solid white;
 }
 
 #portfolio .swiper-wrapper {
@@ -628,14 +627,13 @@ li a span {
 /* skills */
 
 #skills {
-	padding: 25vh 5vw;
+	padding: 20vh 5vw;
 	min-height: 100vh;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid red;
 }
 
 #skills h1 {
@@ -852,9 +850,8 @@ li a span {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 25vh 5vw;
+	padding: 20vh 5vw;
 	gap: 2rem;
-	border: 2px solid white;
 }
 
 #about .title {
@@ -997,8 +994,7 @@ li a span {
 	/* padding: 0 5rem; */
 	display: flex;
 	justify-content: center;
-	padding: 25vh 5vw;
-	border: 2px solid red;
+	padding: 20vh 5vw;
 }
 
 #contact .left-section {
@@ -1227,9 +1223,4 @@ textarea {
 		font-size: 2.5rem;
 		font-weight: 600;
 	}
-}
-
-.spacer {
-	height: 200px;
-	border: 2px solid cyan;
 }
