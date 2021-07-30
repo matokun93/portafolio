@@ -852,11 +852,12 @@ li a span {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10vh 5vw;
+	padding: 25vh 5vw;
 	gap: 2rem;
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 10rem;
+	border: 2px solid white;
 }
 
 #about .title {
@@ -1001,7 +1002,6 @@ li a span {
 	justify-content: center;
 	padding: 25vh 5vw;
 	border: 2px solid red;
-	margin-bottom: 10rem;
 }
 
 #contact .left-section {
@@ -1230,4 +1230,9 @@ textarea {
 		font-size: 2.5rem;
 		font-weight: 600;
 	}
+}
+
+.spacer {
+	height: 300px;
+	border: 2px solid cyan;
 }
