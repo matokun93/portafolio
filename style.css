@@ -722,76 +722,11 @@ li a span {
 	transition: 0.15s;
 }
 
-.logo {
+.logo-container img {
 	width: 3.5rem;
 	height: 3.5rem;
 	background-size: cover;
 	background-position: center;
-}
-
-.logo1 {
-	background-image: url('./static/css.png');
-}
-
-.logo2 {
-	background-image: url('./static/HTML5_Badge_512.png');
-}
-
-.logo3 {
-	background-image: url('./static/javascript.png');
-}
-
-.logo4 {
-	background-image: url('./static/reract.png');
-}
-
-.logo5 {
-	background-image: url('./static/nodejs.png');
-}
-
-.logo6 {
-	background-image: url('./static/sql2.png');
-}
-
-.logo7 {
-	background-image: url('./static/git.png');
-	width: 5.5rem;
-}
-
-.logo8 {
-	background-image: url('./static/xd.png');
-}
-
-.logo9 {
-	background-image: url('./static/blender.png');
-}
-
-.logo10 {
-	background-image: url('./static/zbrush.png');
-}
-
-.logo11 {
-	background-image: url('./static/creativity.png');
-}
-
-.logo12 {
-	background-image: url('./static/learn.png');
-}
-
-.logo13 {
-	background-image: url('./static/vision.png');
-}
-
-.logo14 {
-	background-image: url('./static/adapt2.png');
-}
-
-.logo15 {
-	background-image: url('./static/flag2.png');
-}
-
-.logo16 {
-	background-image: url('./static/innovate.png');
 }
 
 @media (max-width: 1100px) {
@@ -811,7 +746,7 @@ li a span {
 		transition: 0.15s;
 	}
 
-	.logo {
+	.logo-container img {
 		width: 3rem;
 		height: 3rem;
 	}
@@ -838,13 +773,14 @@ li a span {
 }
 
 @media (max-width: 490px) {
+	#skills {
+		padding: 10vh 2vw;
+	}
+
 	#skills .swiper-button-next,
 	#skills .swiper-button-prev {
 		display: none;
 	}
-}
-
-@media (max-width: 420px) {
 	.logo-container {
 		width: 5rem;
 		height: 5rem;
@@ -873,6 +809,37 @@ li a span {
 	#skills h1 {
 		font-size: 2.5rem;
 		font-weight: 600;
+	}
+}
+
+@media (max-width: 380px) {
+	.slider-logos {
+		gap: 0.4rem;
+	}
+
+	.logo-container {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.logo-background {
+		width: 4rem;
+		height: 4rem;
+		font-size: 0.6rem;
+	}
+
+	.logo-background:hover {
+		opacity: 100%;
+		transition: 0.15s;
+	}
+
+	.logo-container img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.slider-title {
+		font-size: 1.4rem;
 	}
 }
 
@@ -963,7 +930,7 @@ li a span {
 
 @media (max-width: 1000px) {
 	#about .info {
-		width: 90%;
+		width: 100%;
 	}
 }
 
@@ -979,7 +946,7 @@ li a span {
 
 @media (max-width: 700px) {
 	.about-icons {
-		gap: 0.1rem;
+		gap: 0;
 		flex-wrap: wrap;
 	}
 
@@ -1003,6 +970,23 @@ li a span {
 	#about .title {
 		font-size: 2.5rem;
 		font-weight: 600;
+	}
+}
+
+@media (max-width: 380px) {
+	.about-icons i {
+		font-size: 2rem;
+	}
+
+	.about-icons-container {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.about-icons-background {
+		width: 4rem;
+		height: 4rem;
+		font-size: 0.6rem;
 	}
 }
 /* Contact */
