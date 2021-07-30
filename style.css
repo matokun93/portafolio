@@ -421,6 +421,7 @@ li a span {
 
 #portfolio {
 	padding: 12vh 0;
+	margin-bottom: 10rem;
 }
 
 #portfolio .swiper-wrapper {
@@ -855,6 +856,7 @@ li a span {
 	gap: 2rem;
 	background-size: cover;
 	background-position: center;
+	margin-bottom: 10rem;
 }
 
 #about .title {
@@ -998,6 +1000,8 @@ li a span {
 	display: flex;
 	justify-content: center;
 	padding: 25vh 5vw;
+	border: 2px solid red;
+	margin-bottom: 10rem;
 }
 
 #contact .left-section {
