@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 :root {
-	--clr-primary: #255f85;
+	--clr-primary: #256285;
+	--clr-navbar: #22628d;
+	/* --clr-navbar: rgb(42, 109, 153); */
 	--clr-primary-light: rgb(38, 108, 155);
 	--clr-accent: rgb(66, 172, 233);
 	--clr-almost-white: rgba(204, 236, 255, 0.993);
@@ -84,14 +86,21 @@ li a span {
 	align-items: center;
 	position: fixed;
 	color: var(--clr-third);
-	background: var(--clr-primary);
+	background: var(--clr-navbar);
 	z-index: 2;
+	box-shadow: 0px 0px 30px -6px #153d6336;
 }
 
 .brand-title {
-	font-size: 2.5em;
-	/* margin-left: 6rem; */
-	margin-left: 5vw;
+	/* margin-left: 5vw; */
+}
+
+.brand-title img {
+	width: 90px;
+	position: absolute;
+	left: 5vw;
+	top: 10px;
+	margin-left: -10px;
 }
 
 .brand-title a,
@@ -116,7 +125,7 @@ li a span {
 .navbar-links li a {
 	text-decoration: none;
 	color: var(--clr-third);
-	padding: 2rem;
+	padding: 2.2rem 2rem;
 	display: block;
 }
 
@@ -130,7 +139,7 @@ li a span {
 
 .toggle-button {
 	position: absolute;
-	top: 2rem;
+	top: 1.5rem;
 	right: 5vw;
 	display: none;
 	flex-direction: column;
@@ -155,23 +164,25 @@ li a span {
 	.navbar-links a {
 		font-size: 1.2rem;
 	}
+
+	.brand-title img {
+		width: 80px;
+	}
 }
 
 @media (max-width: 1250px) {
 	.navbar-links a {
 		font-size: 1rem;
 	}
+
+	.brand-title img {
+		width: 70px;
+	}
 }
 
 @media (max-width: 1000px) {
 	.toggle-button {
 		display: flex;
-	}
-
-	.brand-title {
-		display: flex;
-		align-items: center;
-		height: 5rem;
 	}
 
 	.navbar-links {
@@ -199,6 +210,15 @@ li a span {
 
 	.navbar-links.active {
 		display: flex;
+	}
+
+	.brand-title {
+		height: 65px;
+	}
+
+	.brand-title img {
+		width: 50px;
+		margin-left: 0;
 	}
 }
 
@@ -896,7 +916,7 @@ li a span {
 	align-items: center;
 	justify-content: center;
 	opacity: 0%;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .about-icons-background:hover {
@@ -919,6 +939,7 @@ li a span {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	margin-top: 1.5rem;
 }
 
 .cv-download:hover {
@@ -984,6 +1005,10 @@ li a span {
 		width: 4rem;
 		height: 4rem;
 		font-size: 0.6rem;
+	}
+
+	.cv-download {
+		margin-top: 1.5rem;
 	}
 }
 /* Contact */
