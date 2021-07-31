@@ -19,7 +19,9 @@
         <header>
             <nav class="navbar">
                 <div class="brand-title">
-                    <a href="#home">Mato_Kun</a>
+                    <a href="#home">
+                        <img src="./static/logo matokun2.png" alt="">
+                    </a>
                 </div>
                 <a class="toggle-button">
                     <span class="bar"></span>
@@ -254,7 +256,7 @@
                             <div class="slider-glass">
                                 <div class="slider-details hidden">
                                     <a class="toggle-details"><i class="fas fa-times"></i></a>
-                                    Implementé algunas tecnologías interesantes que he estado aprendiendo para desarrollar este portafolio; utilicé ThreeJS para agregar las particulas flotantes que interactúan con el movimiento del mouse; utilicé Blender para realizar los modelos 3D que se ven en el fondo; las particulas flotantes y el logo los realicé en Krita, otro software que aprendí a utilizar de la mano de Blender; implementé el carrusel de trabajos y el de habilidades a través del framework SwiperJS de JavaScript; el resto está hecho en html, css y JavaScript puro, agregando algunas animaciones simples.
+                                    Implementé algunas tecnologías interesantes que he estado aprendiendo para desarrollar este portafolio; un poco de ThreeJS para las particulas flotantes que interactúan con el movimiento del mouse; implementé el carrusel de trabajos y el de habilidades a través del framework SwiperJS de JavaScript; el resto está hecho en Html, CSS, JavaScript puro, y un poco de Blender.
                                 </div>
                                 <div class="slider-image">
                                     <img src="./static/portfolio-cover.png" alt="">
@@ -479,6 +481,7 @@
                             <textarea name="message" class="message-input" id="" cols="30" rows="10" required></textarea>
                         </div>
                         <button class="submit-button" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                        <input type="hidden" name="_next" value="https://matokun95.github.io/portafolio/#contact">
                    </form>
                 </div>
             </section>
@@ -587,84 +590,6 @@
             }}
             });
 
-            // var swiper = new Swiper('#portfolio .swiper-container', {
-                // effect: 'coverflow',
-                // grabCursor: true,
-                // centeredSlides: true,
-                // coverflowEffect: {
-                //     rotate: 20,
-                //     stretch: 0,
-                //     depth: 200,
-                //     modifier: 1,
-                //     slideShadows: true,
-                // },
-            //     navigation: {
-            //         nextEl: '.swiper-button-next',
-            //         prevEl: '.swiper-button-prev',
-            // },
-            //     breakpoints: {
-            // 320: {
-            // slidesPerView: 1,
-            // spaceBetween: 5
-            // },
-            // 404: {
-            // slidesPerView: 1.14,
-            // spaceBetween: 5
-            // },
-            // 456: {
-            // slidesPerView: 1.28,
-            // spaceBetween: 15
-            // },
-            // 573: {
-            // slidesPerView: 1.42,
-            // spaceBetween: 5
-            // },
-            // 625: {
-            // slidesPerView: 1.56,
-            // spaceBetween: 5
-            // },
-            // 742: {
-            // slidesPerView: 1.7,
-            // spaceBetween: 5
-            // },
-            // 794: {
-            // slidesPerView: 1.84,
-            // spaceBetween: 5
-            // },
-            // 911: {
-            // slidesPerView: 1.98,
-            // spaceBetween: 5
-            // },
-            // 963: {
-            // slidesPerView: 2.12,
-            // spaceBetween: 5
-            // },
-            // 1080: {
-            // slidesPerView: 2.26,
-            // spaceBetween: 5
-            // },
-            // 1132: {
-            // slidesPerView: 2.4,
-            // spaceBetween: 5
-            // },
-            // 1249: {
-            // slidesPerView: 2.54,
-            // spaceBetween: 5
-            // },
-            // 1301: {
-            // slidesPerView: 2.68,
-            // spaceBetween: 15
-            // },
-            // 1418: {
-            // slidesPerView: 2.82,
-            // spaceBetween: 5
-            // },
-            // 1470: {
-            // slidesPerView: 3,
-            // spaceBetween: 10
-            // }},
-            // });
-
             // skills swiper
             var Swiper = new Swiper('#skills .swiper-container', {
                 grabcursos: true,
@@ -683,23 +608,41 @@
             const p = document.querySelector('p')
             const tl = gsap.timeline()
 
-            //tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
             tl.to(h1, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '+=.5')
             tl.to(p, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '-=1')
 
             // toggle menu
             const toggleButton = document.getElementsByClassName('toggle-button')[0]
             const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+            const container = document.querySelector('.container')
+            const logo = document.getElementsByClassName('brand-title')[0]
 
             toggleButton.addEventListener('click', () => {
                 navbarLinks.classList.toggle('active')
+            })
+
+            container.addEventListener('click', () => {
+                if (navbarLinks.classList.contains('active')) {
+                    navbarLinks.classList.remove('active')                    
+                }
+            })
+
+            navbarLinks.addEventListener('click', () => {
+                if (navbarLinks.classList.contains('active')) {
+                    navbarLinks.classList.remove('active')                    
+                }
+            })
+            
+            logo.addEventListener('click', () => {
+                if (navbarLinks.classList.contains('active')) {
+                    navbarLinks.classList.remove('active')                    
+                }
             })
 
             // toggle slider details
             const toggleDetailsButton = document.querySelectorAll('.toggle-details')
             const detailsButtons = document.querySelectorAll('.details-button')
             const details = document.querySelectorAll('.slider-details')
-            const container = document.querySelector('.container')
 
             toggleDetailsButton.forEach(button => {
                 button.addEventListener('click', () => {
@@ -708,19 +651,6 @@
                     })
                 })
             })
-
-            // detailsButtons.forEach(button => {
-            //     button.addEventListener('click', (e) => {
-            //         let son = e.toElement
-            //         let parent = son.parentElement
-            //         let prevSibling = parent.previousElementSibling;
-            //         while(prevSibling.previousElementSibling != null) {
-            //             prevSibling = prevSibling.previousElementSibling;
-            //             prevSibling.classList.remove('hidden')
-            //         }
-            //     })
-            // });
-
 
             detailsButtons.forEach(button => {
                 button.addEventListener('click', () => {
