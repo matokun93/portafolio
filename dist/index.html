@@ -74,7 +74,7 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="section" id="portfolio">
+            <section class="section transition1" id="portfolio">
                 <div class="portfolio-header">
                     <h1>Trabajos</h1>
                     <p>Algunos proyectos profesionales y personales</p>
@@ -287,7 +287,7 @@
             </section>
 
             <!-- Skills -->
-            <section class="section" id="skills">
+            <section class="section transition2" id="skills">
                 <h1>Habilidades</h1>
                 <!-- Swiper -->
                 <div class="swiper-container">
@@ -410,7 +410,7 @@
             </section>
 
             <!-- About -->
-            <section class="section" id="about">
+            <section class="section transition3" id="about">
                 <h1 class="title">Sobre mí</h1>
                 <p class="info"> Soy un Ingeniero civil al que le apasionan el desarrollo de software, el aprendizaje continuo, y las buenas prácticas. <br><br> Aprendo muy rápido, me adapto y soy creativo.
                      Siempre estoy buscando la mejora continua e innovación; soy autodidacta, me gusta explorar y aprender diferentes disciplinas aprovechando mi rápido aprendizaje.
@@ -446,7 +446,7 @@
             </section>
 
             <!-- Contact -->
-            <section class="section" id="contact">
+            <section class="section transition4" id="contact">
                 <div class="left-section">
                     <h1>Contacto</h1>
                     <p class="contact-info-general">Abajo incluyo la información para contactarme, o puedes enviarme un mensaje directamente llenando el formulario</p>
@@ -492,12 +492,9 @@
         <script type="module" src="./index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/CSSRulePlugin.min.js" integrity="sha512-EIzKYNrmzSj8Q5czLrNi/F6bplhopAp2Li9nk/8r7MW+Ov9KPEo0xrjWMYXU8lFYy5dzh/w8Ql5ShZHucrjXdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
-
-            //const content = CSSRulePlugin.getRule('.home-content:before')
-
-
             // autocomplete off
             var removeReadonly = (e) => {
                 setTimeout(() => {
@@ -604,12 +601,60 @@
         </script>
 
         <script>
+            // scroll down icon animation 
+            gsap.registerPlugin(ScrollTrigger)
+            const tl = gsap.timeline()
+
             const h1 = document.querySelector('h1')
             const p = document.querySelector('p')
-            const tl = gsap.timeline()
 
             tl.to(h1, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '+=.5')
             tl.to(p, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', y: '0px'}, '-=1')
+
+            // appear animations
+            gsap.from(".transition1", {
+                scrollTrigger: {
+                    trigger: '.transition1',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .6
+            })
+
+            gsap.from(".transition2", {
+                scrollTrigger: {
+                    trigger: '.transition2',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .6
+            })
+
+            gsap.from(".transition3", {
+                scrollTrigger: {
+                    trigger: '.transition3',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .6
+            })
+
+            gsap.from(".transition4", {
+                scrollTrigger: {
+                    trigger: '.transition4',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .6
+            })
 
             // toggle menu
             const toggleButton = document.getElementsByClassName('toggle-button')[0]
